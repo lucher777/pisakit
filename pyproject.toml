@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pisakit"
+version = "0.1.0"
+description = "Vectorized plausible-value, replicate-weight, multilevel, meta-analytic, and sensitivity inference for large-scale educational assessments"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Kang Liu", email = "peacekange@gmail.com"}
+]
+keywords = [
+    "large-scale assessment",
+    "PISA",
+    "plausible values",
+    "balanced repeated replication",
+    "Rubin rules",
+    "sensitivity analysis",
+    "educational statistics",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Sociology",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "matplotlib>=3.7",
+]
+
+[project.scripts]
+pisakit = "pisakit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/peacekange/pisakit"
+Documentation = "https://peacekange.github.io/pisakit/"
+Repository = "https://github.com/peacekange/pisakit"
+Issues = "https://github.com/peacekange/pisakit/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pisakit = ["data/*.npz", "data/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -p no:asyncio"
