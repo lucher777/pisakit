@@ -1,6 +1,6 @@
 site_name: pisakit
 site_description: Vectorized plausible-value, replicate-weight, multilevel, and sensitivity inference for large-scale educational assessments
-repo_url: https://github.com/peacekange/pisakit
+repo_url: https://github.com/lucher777/pisakit
 theme:
   name: material
 nav:

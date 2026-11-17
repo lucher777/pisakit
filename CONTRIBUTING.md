@@ -5,7 +5,7 @@ Thank you for your interest in improving `pisakit`. Contributions covering bug f
 ## Development Setup
 
 ```bash
-git clone https://github.com/peacekange/pisakit.git
+git clone https://github.com/lucher777/pisakit.git
 cd pisakit
 pip install -e .[dev]
 ```

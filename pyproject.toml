@@ -48,10 +48,10 @@ dev = [
 pisakit = "pisakit.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/peacekange/pisakit"
-Documentation = "https://peacekange.github.io/pisakit/"
-Repository = "https://github.com/peacekange/pisakit"
-Issues = "https://github.com/peacekange/pisakit/issues"
+Homepage = "https://github.com/lucher777/pisakit"
+Documentation = "https://lucher777.github.io/pisakit/"
+Repository = "https://github.com/lucher777/pisakit"
+Issues = "https://github.com/lucher777/pisakit/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
