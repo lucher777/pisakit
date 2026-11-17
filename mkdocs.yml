@@ -7,7 +7,7 @@ nav:
   - Home: index.md
   - Tutorial: tutorial.md
   - API Reference: api.md
-  - Contributing: ../CONTRIBUTING.md
+  - Contributing: contributing.md
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true

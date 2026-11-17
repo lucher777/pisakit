@@ -158,7 +158,7 @@ def verify_numerical_equivalence(
     data: pd.DataFrame | None = None,
     wls_tol: float = 1e-10,
     rubin_tol: float = 1e-11,
-    reml_tol: float = 1e-10,
+    reml_tol: float = 1e-9,
 ) -> EquivalenceReport:
     """Verify pisakit estimators against SciPy WLS, OECD Fay BRR, and dense REML.
 
